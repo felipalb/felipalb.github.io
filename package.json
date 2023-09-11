@@ -13,7 +13,7 @@
     "react-scripts": "^2.1.8",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://belkiss-lino.github.io/portfolio-belkiss-lino",
+  "homepage": "https://github.com/felipalb/portfolio-deploy",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
