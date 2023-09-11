@@ -1,0 +1,93 @@
+.header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/*------- CT/BUTTONS -------*/
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/*------- CT/BUTTONS -------*/
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after {
+    content: "";
+    width: 1px;
+    height: 2em;
+    background: var(--color-primary);
+}
+
+.header__socials-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/*------- ME -------*/
+.me {
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--color-primary),
+        transparent
+    );    
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.me:hover {
+    transform: rotate(0);
+}
+
+.me img {
+    width: 350px;
+}
+
+/*------- SCROLL DOWN -------*/
+.scroll__down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+/* ----------------- MEDIA QUERIES (MEDIUM DEVICES) ------------------ */
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 68vh;
+    }
+}
+
+/* ----------------- MEDIA QUERIES (SMALL DEVICES) ------------------ */
+@media screen and (max-width: 600px) {
+    .header__socials, .scroll__down {
+        display: none;
+    }
+}
